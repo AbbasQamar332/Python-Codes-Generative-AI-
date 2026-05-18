@@ -54,7 +54,26 @@ while True:
             input("\nPress Enter to continue...")
         case 3:
             print("Remove Record")
-            input("\nPress Enter to continue...")
+            email = input("email : ")
+            is_found = False
+            new_list = []
+            with open("Records.txt","r")as file:
+                data = file.readlines()
+                for student in list(data):
+                        record = student.strip().split("||")
+                        new_list.append(record)
+                        if  record[1].strip() == email:
+                                is_found = True
+                                data.remove(student)
+                                break 
+                        if is_found:
+                            with open("Records.txt","w") as file:
+                                file.writelines(data)
+                                print("Record removed successfully!")
+                        else:
+                                    print("Record not found!")
+                                
+            
         case 4:
             print("Update Record")
             input("\nPress Enter to continue...")

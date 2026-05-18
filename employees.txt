@@ -1,0 +1,2 @@
+123||sheraz||IT||100000
+234||kazim@gmail.com||kazim||HR||100000

@@ -1,0 +1,36 @@
+# x=lambda a : a+10
+# print(x(5))
+# x=lambda a, b : a*b
+# print(x(5, 3))
+
+
+# def myfunc(n):
+#     return lambda a : a * n
+# mydoubler = myfunc(2)
+# print(mydoubler(11))
+# print(myfunc(3)(11))
+
+
+# def myfunc(n):
+#     return lambda a : a ** n
+
+# power_1= myfunc(2)
+# power_2 = myfunc(3)
+# power_3 = myfunc(5)
+# power_4 = myfunc(6)
+# print("power_1:", power_1(2))
+# print("power_2:", power_2(3))
+# print("power_3:", power_3(4))
+# print("power_4:", power_4(5))
+
+# def myfunc(n):
+#     return lambda a : a ** n
+
+# power_2= myfunc(2)
+# cube_3 = myfunc(3)
+# power_4 = myfunc(5)
+# power_5 = myfunc(6)
+# print("power_2:", power_2(2))
+# print("cube_3:", cube_3(3))
+# print("power_4:", power_4(4))
+# print("power_5:", power_5(5))
